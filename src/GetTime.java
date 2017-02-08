@@ -16,7 +16,7 @@ public class GetTime extends Thread {
 
         for(int i=1; i<=30; i++){
             rightNow = new Date();
-            currentLocale = new Locale("en,""US");
+            currentLocale = new Locale("en","US");
             timeFormatter = DateFormat.getTimeInstance(DateFormat.DEFAULT, currentLocale);
             dateFormatter = DateFormat.getDateInstance(DateFormat.DEFAULT, currentLocale);
             timeOutput = timeFormatter.format(rightNow);
